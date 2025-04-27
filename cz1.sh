@@ -9,3 +9,9 @@ do
 echo "stworzono log$i.txt o $(date)" > "log$i.txt"
 done
 ;;
+--logs30)
+for i in {1..30}
+do
+echo "stworzono log$i.txt o $(date)" > "log$i.txt"
+done
+;;
