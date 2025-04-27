@@ -19,8 +19,13 @@ done
 echo "--date lub -d: dzisiejsza data"
 echo "--logs lub -l : tworzy 100 plikow log"
 echo "--logs30 lub -l30: tworzy 30 plikow log"
+echo "--init : klonuje repo i ustawia PATH"
 ;;
-
+--init)
+git clone https://github.com/kofasusi?bashing.git
+export PATH=$PATH:$(pwd)
+echo "Sciezka $(pwd) dodana do PATH"
+;;
 *)
 echo "Nieznana opcja"
 ;;
